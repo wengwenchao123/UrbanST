@@ -1,0 +1,37 @@
+{
+    "name": "NYC-Taxi15",
+    "domain": "traffic demand",
+    "shape": [
+        2880,
+        200,
+        4
+    ],
+    "num_time_steps": 2880,
+    "num_nodes": 200,
+    "num_features": 4,
+    "feature_description": [
+        "traffic demand",
+        "time of day",
+        "day of week"
+    ],
+    "has_graph": false,
+    "frequency (minutes)": 30,
+    "regular_settings": {
+        "INPUT_LEN": 12,
+        "OUTPUT_LEN": 12,
+        "TRAIN_VAL_TEST_RATIO": [
+            0.6,
+            0.2,
+            0.2
+        ],
+        "NORM_EACH_CHANNEL": false,
+        "RESCALE": true,
+        "RESCALE_dim": [0,1],
+        "METRICS": [
+            "MAE",
+            "RMSE",
+            "MAPE"
+        ],
+        "NULL_VAL": 0.0
+    }
+}
