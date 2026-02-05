@@ -42,27 +42,15 @@ For convenience, we package these datasets used in our model in [Google Drive](h
 
 Unzip the downloaded dataset files to the main file directory, the same directory as run.py.
 
-## 🥳 Run It!
+## Train Model
 
-`basicts.launch_training` is the entry point for training. You can run the following command to train your model:
-
-- **Train the MLP Model Mentioned Above**
-
-    ```bash
-    python experiments/train.py -c examples/regular_config.py -g 0
-    ```
-
-or:
-
-- **Reproducing Other Built-in Models**
-
-    BasicTS provides a variety of built-in models. You can reproduce these models with the following command:
+You can run the following command to train your model:
 
     ```bash
     python experiments/train.py -c baselines/${MODEL_NAME}/${DATASET_NAME}.py --gpus '0'
     ```
 
-    Replace `${DATASET_NAME}` and `${MODEL_NAME}` with any supported models and datasets. For example, to run Graph WaveNet on the METR-LA dataset:
+Replace `${DATASET_NAME}` and `${MODEL_NAME}` with any supported models and datasets. For example, to run Graph WaveNet on the METR-LA dataset:
 
     ```bash
     python experiments/train.py -c baselines/GWNet/METR-LA.py --gpus '0'
@@ -70,7 +58,7 @@ or:
 
 ## How to Evaluate Your Model
 
-`basicts.launch_evaluation` is the entry point for evaluation. You can run the following command to evaluate your model:
+You can run the following command to evaluate your model:
 
 ```bash
 python experiments/evaluate.py -cfg {CONFIG_FILE}.py -ckpt {CHECKPOINT_PATH}.pth -g 0
@@ -79,5 +67,5 @@ python experiments/evaluate.py -cfg {CONFIG_FILE}.py -ckpt {CHECKPOINT_PATH}.pth
 
 ##  Acknowledgement
 
-BasicTS is developed based on [BasicTS](https://github.com/cnstark/easytorch), an easy-to-use and powerful open-source neural network training framework.
+UrbanST is developed based on [BasicTS]https://github.com/GestaltCogTeam/BasicTS/tree/v0.5.8)), an easy-to-use and powerful open-source neural network training framework.
 
