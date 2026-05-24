@@ -1,5 +1,5 @@
 <div align="center">
-  <h3><b> UrbanST: A Fair and Scalable rban Spatio-Temporal Forecasting Benchmark and Toolkit. </b></h3>
+  <h3><b> UrbanST: A Protocol-Aware Urban Spatio-Temporal Forecasting Benchmark and Toolkit. </b></h3>
 </div>
 
 ---
@@ -12,7 +12,7 @@ UrbanST is an improvement based on BasicTS, and its installation and usage can r
 
 ### PyTorch
 
-BasicTS is very flexible regarding PyTorch versions. You can https://pytorch.org/get-started/previous-versions/ according to your Python version. We recommend using `pip` for installation.
+UrbanST is very flexible regarding PyTorch versions. You can https://pytorch.org/get-started/previous-versions/ according to your Python version. We recommend using `pip` for installation.
 
 ### Example Setups
 
@@ -20,8 +20,8 @@ BasicTS is very flexible regarding PyTorch versions. You can https://pytorch.org
 
 ```bash
 # Install Python
-conda create -n BasicTS python=3.11
-conda activate BasicTS
+conda create -n UrbanST python=3.11
+conda activate UrbanST
 # Install PyTorch
 pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu124
 ```
@@ -30,8 +30,8 @@ pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https
 
 ```bash
 # Install Python
-conda create -n BasicTS python=3.9
-conda activate BasicTS
+conda create -n UrbanST python=3.9
+conda activate UrbanST
 # Install PyTorch
 pip install torch==1.10.0+cu111 torchvision==0.11.0+cu111 torchaudio==0.10.0 -f https://download.pytorch.org/whl/torch_stable.html
 ```
